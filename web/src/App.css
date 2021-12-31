@@ -1,0 +1,273 @@
+:root{
+  --primary-white: #fff;
+  --primary-blue: orange;
+  --primary-dark: grey;
+  --primary-orangered: orangered;
+  --primary-blue: blue;
+  --primary-brown: brown;
+}
+
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media(max-width: 768px){
+  .App.portfolio{
+    width: 66vh;
+  }
+}
+
+.navbar-brand{
+color: red !important;
+font-size: 35px !important;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+max-width: 17.25rem;
+padding: 0 !important;
+height: 4rem;
+}
+
+
+nav a.nav-link{
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.oo375rem;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+nav ul{
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.navbar-nav > li > a{
+  color: var(--primary-white) !important;
+  border-top: 0.0185rem solid var(--primary-dark);
+}
+.navbar-nav >li > a.active, .navbar-nav> li > a:hover{
+  border-top: 0.0185rem solid var(--primary-blue);
+
+}
+
+/*********Tell**************/
+.Tell{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  background-color: lightseagreen;
+  height: 100vh;
+}
+.Tell h1{
+  color: var(--primary-orangered);
+}
+.Tell p{
+  color: var(--primary-blue);
+  margin-top: 5px;
+}  
+/**********Details*************/
+.about{
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+  background-color: greenyellow;
+}
+.left{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .left .title{
+  font: bold;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 60%;
+}
+.about .left .desc{
+  width: 60%;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.about .left .info{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about .left .info button{
+  padding: 15px;
+  background-color: lightskyblue;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px solid black;
+  font-weight: bold;  
+  border:none;
+  letter-spacing: 2px;
+  list-style: none;
+}
+.about .left .info .contact{
+  display: flex;
+  flex-direction: column;
+}
+.about .left .info .contact .number{
+  color: var(--primary-orangered);
+  font-weight: bold;
+}
+.about .left .info .contact .contactText{
+  color: var(--primary-blue);
+  margin-top: 5px;
+}
+.about .right{
+  width: 40%;
+}
+.about .right .image img{
+  width: 100%;
+}
+@media  screen and (max-width: 768px) {
+  
+  .about{
+      flex-direction: column;
+  }
+  .left{
+    width: 100%;
+    height: 100%;
+  }
+  .about .left .title{
+    width: 100%;
+    font-size: 50px;
+  }
+  .about .left .desc{
+    width: 100%;
+  }
+  .about .left .info{
+    width: 100%;
+    flex-direction: column;
+  }
+  .about .left .info button{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .about .left .info .contact .contactText{
+    margin-bottom: 20px;
+  }
+}
+/**************Porfolio 1************************/
+.port{
+  background-color: lightslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0rem;
+}
+.port h1{
+  font-size: 50px;
+}
+.port ul{
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.port>ul>li{
+  font-size: 17px;
+  margin-right: 40px;
+  padding: 7px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contain{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contain .items{
+  width: 270px;
+  height: 180px;
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.contain .items h3{
+  position: absolute;
+  font-size: 20px;
+  color: blue;
+}
+.contain .items img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.contain .items:hover{
+  background-color: crimson;
+}
+.contain .items img:hover{
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/*************Portfolio page*********************/
+body.portfolio{
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.portfolio{
+  margin-top: 0.7rem;
+  background: lightyellow;
+  gap: 2rem;
+  border-radius: 1rem;
+  display: grid;
+}
+.portfolio h1{
+  color: red;
+  font-size: 40px;
+}
+@media screen and (min-width: 760px){
+  .portfolio{
+    grid-template-columns: repeat(3, 1fr)
+  }
+  .portfolio img{
+    width: 66vh;
+  }
+}
+@media(max-width: 768px){
+  .portfolio img{
+    width: 68vh;
+  }
+  .portfolio h4{
+    font-size: 1rem !important;
+  }
+}
+/********Experiences**********/
+body .myexperience{
+  background-color: lightslategray;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.project1 h1{
+  color: red;
+  text-transform: uppercase;
+}
+.project1 h1 p{
+  font-size: 30px;
+}

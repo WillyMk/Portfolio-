@@ -1,0 +1,31 @@
+.title-text1{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: rgba(61, 60, 56, 0.774);
+}
+.title-text1 p{
+    margin: auto;
+    font-size: 30px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text1 p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(orangered, blue);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text1 h1{
+    font-size: 30px;
+    color: #fff;
+}

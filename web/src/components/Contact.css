@@ -1,0 +1,82 @@
+
+/***********Contact**********/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif; 
+}
+.contactpic{
+  background-color: rgba(2, 1, 12, 0.774);
+  margin-top: -5rem;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  grid-gap: 20em;
+}
+.anime{
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  margin-top: 6em;
+  font-size: 25px;
+}
+.ani{
+  color: #fff;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+  margin-top: 5em;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
+.form button{
+  background-color: red;
+  color: #fff;
+  width: 100%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.anime h1{
+  margin-bottom: 2em;
+  color: red;
+}
+.form h1{
+  color: #fff;
+}
+.form label{
+  color: #fff;
+  font-size: 1.5em;
+}
+.form input{
+  color: black;
+  font-size: 1.5em;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 2em;
+}
+.form textarea{
+  font-size: 1.5em;
+  width: 400px;
+  height: 120px;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 960px){
+  .contactpic{
+    display: flex;
+    flex-direction: column;
+  }
+  .app{
+    margin-top: -10em;
+  }
+}
+
+
