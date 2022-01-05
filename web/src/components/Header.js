@@ -60,17 +60,6 @@ const Header =() => {
                         </span>
                     </span>
                 </div>
-                <div className="profile-options" data-aos="fade-right">
-                    <button className="btn primary-btn">
-                        {""}
-                        Hire me{""}
-                    </button>
-                    <a href="MyCv.pdf" download="MyCv.pdf">
-                        <button className="btn highlighted-btn">
-                            Get CV
-                        </button>
-                    </a>
-                </div>
             </div>
             <div className="profile-picture">
                 <div className="profile-picture-background">

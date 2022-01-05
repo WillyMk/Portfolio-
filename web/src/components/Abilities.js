@@ -15,8 +15,7 @@ const Abilities = () => {
             <h1>About Me</h1>
         </div>
         <div className="feature-box">
-            <div className="features" data-aos="fade-right">
-                <h1>Myself</h1>
+            <div className="features" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="800">
                 <div className="features-desc">
                     <div className="feature-icon">
                         <i className="fas fa-comment-dots"></i>

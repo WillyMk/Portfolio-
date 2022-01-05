@@ -5,21 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  .navbar.active{
-    background: linear-gradient(90deg, blue);
-    position: sticky;
-  }
+
   .navbar-logo {
     color: #fff;
     cursor: pointer; 
     text-decoration: none;
     font-size: 20px;
     list-style: none;
-    margin-left: 14em;
+    margin-left: 3em;
   }
   .navbar-logo:hover{
     list-style: none;
@@ -86,7 +82,9 @@
       text-align: center;
       align-items: center;
     }
-  
+    .navbar{
+      background-color: rgba(3, 0, 0, 0.774);
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;

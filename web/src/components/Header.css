@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
+    min-height: 100vh;
     min-height: fit-content;
     background-size: cover;
     background-position: center;
@@ -42,7 +42,8 @@
   }
   .highlighted-text{
     color: darkorange;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .profile-role-tagline{
     font-size: 25px;
@@ -65,8 +66,7 @@
     margin: 0 0 0 28px;
     background-color: chocolate;
     border-radius: 10%;
-    width: 30%;
-    height: 20%;
+   
   }
   .profile-options .highlighted-btn:hover{
     margin: 0 0 0 28px;
@@ -121,11 +121,26 @@
         z-index: 700;
     }
   }
-  @media screen and (max-width: 910px) {
+  @media screen and (max-width: 960px) {
+    .profile-container{
+      min-height: 100vh;
+      background-color: rgba(3, 0, 0, 0.774);
+    }
+    .highlighted-text{
+      font-size: 30px;
+    }
+    .profile-details{
+      margin-bottom: 5em;
+      font-size: 25px;
+    }
+    .profile-role-tagline{
+      font-size: 26px;
+    }
   .profile-picture{
     height: 320px;
     width: 320px;
     margin: 0 0 0 4px;
+    margin-top: 8em;
   }
   }
   @media screen and (max-width: 810px) {

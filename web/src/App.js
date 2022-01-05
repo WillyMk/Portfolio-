@@ -4,8 +4,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact';
 import Home from './components/views/Home';
-function App(){
 
+function App(){
   return (
     //routes or paths on how the code runs
     <BrowserRouter>

@@ -1,7 +1,7 @@
 .title-text1{
     text-align: center;
     padding-bottom: 20px;
-    background-color: rgba(61, 60, 56, 0.774);
+    background-color: rgba(2, 6, 14, 0.774);
 }
 .title-text1 p{
     margin: auto;
@@ -28,4 +28,9 @@
 .title-text1 h1{
     font-size: 30px;
     color: #fff;
+}
+@media screen and (max-width: 960px){
+    .title-text1{
+        background-color: rgba(2, 6, 14, 0.774);
+    }
 }

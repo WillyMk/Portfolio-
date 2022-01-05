@@ -26,7 +26,7 @@ const Services = () => {
     const [cards] = useState(notes);
     return (
         <div className="cont" id="services">
-        <div className="content">
+        <div className="content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
            {cards.map((project)=>{
                return(
                 <Names key={notes.id} {...project}/>

@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './Workflow.css'
 import "aos/dist/aos.css";
+import Aos from 'aos';
 
 const notes =[
     {
@@ -35,10 +36,13 @@ const notes =[
     }
 ];
 const Workflow = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     const [cards] = useState(notes);
     return (
         <div className="workflow1" id="portfolio">
-        <div className="workflow2">
+        <div className="workflow2" data-aos="flip-left" data-aos-easing="ease-out-cubic"data-aos-duration="2000">
            {cards.map((project)=>{
                return(
                 <Names key={notes.id} {...project}/>
